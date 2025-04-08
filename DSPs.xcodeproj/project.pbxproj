@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9DDE07D72DA56D3B0022E5F2 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE07D02DA56CCC0022E5F2 /* Direction.swift */; };
+		9DDE07D82DA56D3B0022E5F2 /* MazeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE07CD2DA56B360022E5F2 /* MazeGame.swift */; };
+		9DDE07D92DA56D3B0022E5F2 /* GreenKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE07D62DA56D150022E5F2 /* GreenKit.swift */; };
+		9DDE07DA2DA56D3B0022E5F2 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE07D12DA56CD40022E5F2 /* Room.swift */; };
+		9DDE07DB2DA56D3B0022E5F2 /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE07CF2DA56CC80022E5F2 /* Wall.swift */; };
+		9DDE07DC2DA56D3B0022E5F2 /* MazeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE07D22DA56CDE0022E5F2 /* MazeFactory.swift */; };
+		9DDE07DD2DA56D3B0022E5F2 /* Door.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE07CE2DA56CC50022E5F2 /* Door.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		9DDE07BD2DA569DF0022E5F2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +30,13 @@
 
 /* Begin PBXFileReference section */
 		9DDE07BF2DA569DF0022E5F2 /* DSPs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSPs; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DDE07CD2DA56B360022E5F2 /* MazeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeGame.swift; sourceTree = "<group>"; };
+		9DDE07CE2DA56CC50022E5F2 /* Door.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Door.swift; sourceTree = "<group>"; };
+		9DDE07CF2DA56CC80022E5F2 /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
+		9DDE07D02DA56CCC0022E5F2 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		9DDE07D12DA56CD40022E5F2 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		9DDE07D22DA56CDE0022E5F2 /* MazeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeFactory.swift; sourceTree = "<group>"; };
+		9DDE07D62DA56D150022E5F2 /* GreenKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +61,7 @@
 		9DDE07B62DA569DF0022E5F2 = {
 			isa = PBXGroup;
 			children = (
+				9DDE07CB2DA56B210022E5F2 /* Creation */,
 				9DDE07C12DA569DF0022E5F2 /* DSPs */,
 				9DDE07C02DA569DF0022E5F2 /* Products */,
 			);
@@ -55,6 +73,44 @@
 				9DDE07BF2DA569DF0022E5F2 /* DSPs */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9DDE07CB2DA56B210022E5F2 /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				9DDE07CC2DA56B2C0022E5F2 /* AbstractFactory */,
+			);
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		9DDE07CC2DA56B2C0022E5F2 /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9DDE07D32DA56CE70022E5F2 /* Concretes */,
+				9DDE07D22DA56CDE0022E5F2 /* MazeFactory.swift */,
+				9DDE07D02DA56CCC0022E5F2 /* Direction.swift */,
+				9DDE07CF2DA56CC80022E5F2 /* Wall.swift */,
+				9DDE07CE2DA56CC50022E5F2 /* Door.swift */,
+				9DDE07CD2DA56B360022E5F2 /* MazeGame.swift */,
+				9DDE07D12DA56CD40022E5F2 /* Room.swift */,
+			);
+			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		9DDE07D32DA56CE70022E5F2 /* Concretes */ = {
+			isa = PBXGroup;
+			children = (
+				9DDE07D52DA56D100022E5F2 /* GreenKit */,
+			);
+			path = Concretes;
+			sourceTree = "<group>";
+		};
+		9DDE07D52DA56D100022E5F2 /* GreenKit */ = {
+			isa = PBXGroup;
+			children = (
+				9DDE07D62DA56D150022E5F2 /* GreenKit.swift */,
+			);
+			path = GreenKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DDE07D72DA56D3B0022E5F2 /* Direction.swift in Sources */,
+				9DDE07D82DA56D3B0022E5F2 /* MazeGame.swift in Sources */,
+				9DDE07D92DA56D3B0022E5F2 /* GreenKit.swift in Sources */,
+				9DDE07DA2DA56D3B0022E5F2 /* Room.swift in Sources */,
+				9DDE07DB2DA56D3B0022E5F2 /* Wall.swift in Sources */,
+				9DDE07DC2DA56D3B0022E5F2 /* MazeFactory.swift in Sources */,
+				9DDE07DD2DA56D3B0022E5F2 /* Door.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
