@@ -15,7 +15,7 @@
   </tr>
   <tr>
     <td>
-      <b>Abstract factory pattern(추상 팩토리 패턴)</b>
+      <b>Builder pattern(빌더 패턴)</b>
     </td>
     <td>
       <a href="https://github.com/J0onYEong/GOF-design-pattern/tree/develop/Builder">저장소</a>
