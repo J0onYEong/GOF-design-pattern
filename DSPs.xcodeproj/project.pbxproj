@@ -6,18 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		9DDE07D72DA56D3B0022E5F2 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE07D02DA56CCC0022E5F2 /* Direction.swift */; };
-		9DDE07D82DA56D3B0022E5F2 /* MazeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE07CD2DA56B360022E5F2 /* MazeGame.swift */; };
-		9DDE07D92DA56D3B0022E5F2 /* GreenKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE07D62DA56D150022E5F2 /* GreenKit.swift */; };
-		9DDE07DA2DA56D3B0022E5F2 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE07D12DA56CD40022E5F2 /* Room.swift */; };
-		9DDE07DB2DA56D3B0022E5F2 /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE07CF2DA56CC80022E5F2 /* Wall.swift */; };
-		9DDE07DC2DA56D3B0022E5F2 /* MazeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE07D22DA56CDE0022E5F2 /* MazeFactory.swift */; };
-		9DDE07DD2DA56D3B0022E5F2 /* Door.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE07CE2DA56CC50022E5F2 /* Door.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		9DDE07BD2DA569DF0022E5F2 /* CopyFiles */ = {
+		9DDE07F12DA578520022E5F2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -29,26 +19,39 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9DDE07BF2DA569DF0022E5F2 /* DSPs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSPs; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DDE07CD2DA56B360022E5F2 /* MazeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeGame.swift; sourceTree = "<group>"; };
-		9DDE07CE2DA56CC50022E5F2 /* Door.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Door.swift; sourceTree = "<group>"; };
-		9DDE07CF2DA56CC80022E5F2 /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
-		9DDE07D02DA56CCC0022E5F2 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
-		9DDE07D12DA56CD40022E5F2 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
-		9DDE07D22DA56CDE0022E5F2 /* MazeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeFactory.swift; sourceTree = "<group>"; };
-		9DDE07D62DA56D150022E5F2 /* GreenKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenKit.swift; sourceTree = "<group>"; };
+		9DDE07F32DA578520022E5F2 /* AbstractFactory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AbstractFactory; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9DDE08122DA578670022E5F2 /* Exceptions for "AbstractFactory" folder in "AbstractFactory" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Concretes/GrayKit/GrayKit.swift,
+				Concretes/GreenKit/GreenKit.swift,
+				Direction.swift,
+				Door.swift,
+				main.swift,
+				MazeGame.swift,
+				Room.swift,
+				Wall.swift,
+			);
+			target = 9DDE07F22DA578520022E5F2 /* AbstractFactory */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		9DDE07C12DA569DF0022E5F2 /* DSPs */ = {
+		9DDE07E32DA5781C0022E5F2 /* AbstractFactory */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DSPs;
+			exceptions = (
+				9DDE08122DA578670022E5F2 /* Exceptions for "AbstractFactory" folder in "AbstractFactory" target */,
+			);
+			path = AbstractFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9DDE07BC2DA569DF0022E5F2 /* Frameworks */ = {
+		9DDE07F02DA578520022E5F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,8 +64,7 @@
 		9DDE07B62DA569DF0022E5F2 = {
 			isa = PBXGroup;
 			children = (
-				9DDE07CB2DA56B210022E5F2 /* Creation */,
-				9DDE07C12DA569DF0022E5F2 /* DSPs */,
+				9DDE07E32DA5781C0022E5F2 /* AbstractFactory */,
 				9DDE07C02DA569DF0022E5F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,72 +72,31 @@
 		9DDE07C02DA569DF0022E5F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DDE07BF2DA569DF0022E5F2 /* DSPs */,
+				9DDE07F32DA578520022E5F2 /* AbstractFactory */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9DDE07CB2DA56B210022E5F2 /* Creation */ = {
-			isa = PBXGroup;
-			children = (
-				9DDE07CC2DA56B2C0022E5F2 /* AbstractFactory */,
-			);
-			path = Creation;
-			sourceTree = "<group>";
-		};
-		9DDE07CC2DA56B2C0022E5F2 /* AbstractFactory */ = {
-			isa = PBXGroup;
-			children = (
-				9DDE07D32DA56CE70022E5F2 /* Concretes */,
-				9DDE07D22DA56CDE0022E5F2 /* MazeFactory.swift */,
-				9DDE07D02DA56CCC0022E5F2 /* Direction.swift */,
-				9DDE07CF2DA56CC80022E5F2 /* Wall.swift */,
-				9DDE07CE2DA56CC50022E5F2 /* Door.swift */,
-				9DDE07CD2DA56B360022E5F2 /* MazeGame.swift */,
-				9DDE07D12DA56CD40022E5F2 /* Room.swift */,
-			);
-			path = AbstractFactory;
-			sourceTree = "<group>";
-		};
-		9DDE07D32DA56CE70022E5F2 /* Concretes */ = {
-			isa = PBXGroup;
-			children = (
-				9DDE07D52DA56D100022E5F2 /* GreenKit */,
-			);
-			path = Concretes;
-			sourceTree = "<group>";
-		};
-		9DDE07D52DA56D100022E5F2 /* GreenKit */ = {
-			isa = PBXGroup;
-			children = (
-				9DDE07D62DA56D150022E5F2 /* GreenKit.swift */,
-			);
-			path = GreenKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9DDE07BE2DA569DF0022E5F2 /* DSPs */ = {
+		9DDE07F22DA578520022E5F2 /* AbstractFactory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DDE07C62DA569DF0022E5F2 /* Build configuration list for PBXNativeTarget "DSPs" */;
+			buildConfigurationList = 9DDE07F72DA578520022E5F2 /* Build configuration list for PBXNativeTarget "AbstractFactory" */;
 			buildPhases = (
-				9DDE07BB2DA569DF0022E5F2 /* Sources */,
-				9DDE07BC2DA569DF0022E5F2 /* Frameworks */,
-				9DDE07BD2DA569DF0022E5F2 /* CopyFiles */,
+				9DDE07EF2DA578520022E5F2 /* Sources */,
+				9DDE07F02DA578520022E5F2 /* Frameworks */,
+				9DDE07F12DA578520022E5F2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				9DDE07C12DA569DF0022E5F2 /* DSPs */,
-			);
-			name = DSPs;
+			name = AbstractFactory;
 			packageProductDependencies = (
 			);
-			productName = DSPs;
-			productReference = 9DDE07BF2DA569DF0022E5F2 /* DSPs */;
+			productName = AbstractFactory;
+			productReference = 9DDE07F32DA578520022E5F2 /* AbstractFactory */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -148,7 +109,7 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					9DDE07BE2DA569DF0022E5F2 = {
+					9DDE07F22DA578520022E5F2 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -167,23 +128,16 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DDE07BE2DA569DF0022E5F2 /* DSPs */,
+				9DDE07F22DA578520022E5F2 /* AbstractFactory */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9DDE07BB2DA569DF0022E5F2 /* Sources */ = {
+		9DDE07EF2DA578520022E5F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DDE07D72DA56D3B0022E5F2 /* Direction.swift in Sources */,
-				9DDE07D82DA56D3B0022E5F2 /* MazeGame.swift in Sources */,
-				9DDE07D92DA56D3B0022E5F2 /* GreenKit.swift in Sources */,
-				9DDE07DA2DA56D3B0022E5F2 /* Room.swift in Sources */,
-				9DDE07DB2DA56D3B0022E5F2 /* Wall.swift in Sources */,
-				9DDE07DC2DA56D3B0022E5F2 /* MazeFactory.swift in Sources */,
-				9DDE07DD2DA56D3B0022E5F2 /* Door.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +262,7 @@
 			};
 			name = Release;
 		};
-		9DDE07C72DA569DF0022E5F2 /* Debug */ = {
+		9DDE07F82DA578520022E5F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -319,7 +273,7 @@
 			};
 			name = Debug;
 		};
-		9DDE07C82DA569DF0022E5F2 /* Release */ = {
+		9DDE07F92DA578520022E5F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -342,11 +296,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DDE07C62DA569DF0022E5F2 /* Build configuration list for PBXNativeTarget "DSPs" */ = {
+		9DDE07F72DA578520022E5F2 /* Build configuration list for PBXNativeTarget "AbstractFactory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DDE07C72DA569DF0022E5F2 /* Debug */,
-				9DDE07C82DA569DF0022E5F2 /* Release */,
+				9DDE07F82DA578520022E5F2 /* Debug */,
+				9DDE07F92DA578520022E5F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
