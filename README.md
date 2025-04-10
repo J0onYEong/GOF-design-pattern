@@ -24,7 +24,7 @@
       <a href="https://ios-adventure-with-aphelios.tistory.com/46">정리글</a>
     </td>
   </tr>
-    <tr>
+  <tr>
     <td>
       <b>Factory method(팩토리 매서드)</b>
     </td>
@@ -33,6 +33,17 @@
     </td>
     <td>
       <a href="https://ios-adventure-with-aphelios.tistory.com/48">정리글</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>Prototype pattern(원형 패턴)</b>
+    </td>
+    <td>
+      <a href="https://github.com/J0onYEong/GOF-design-pattern/tree/develop/Prototype">저장소</a>
+    </td>
+    <td>
+      <a href="https://ios-adventure-with-aphelios.tistory.com/49">정리글</a>
     </td>
   </tr>
 </table>
