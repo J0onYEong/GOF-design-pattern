@@ -43,6 +43,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		9DDE09302DA790FF0022E5F2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +59,7 @@
 		9DDE08542DA62E830022E5F2 /* Builder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Builder; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDE08812DA652750022E5F2 /* FactoryMethod */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FactoryMethod; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDE08EB2DA77B7E0022E5F2 /* Prototype */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Prototype; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DDE09322DA790FF0022E5F2 /* Singleton */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Singleton; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -93,6 +103,11 @@
 			path = Prototype;
 			sourceTree = "<group>";
 		};
+		9DDE09332DA790FF0022E5F2 /* Singleton */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +139,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9DDE092F2DA790FF0022E5F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -134,6 +156,7 @@
 				9DDE08552DA62E830022E5F2 /* Builder */,
 				9DDE08822DA652750022E5F2 /* FactoryMethod */,
 				9DDE08EC2DA77B7E0022E5F2 /* Prototype */,
+				9DDE09332DA790FF0022E5F2 /* Singleton */,
 				9DDE07C02DA569DF0022E5F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -145,6 +168,7 @@
 				9DDE08542DA62E830022E5F2 /* Builder */,
 				9DDE08812DA652750022E5F2 /* FactoryMethod */,
 				9DDE08EB2DA77B7E0022E5F2 /* Prototype */,
+				9DDE09322DA790FF0022E5F2 /* Singleton */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -237,6 +261,28 @@
 			productReference = 9DDE08EB2DA77B7E0022E5F2 /* Prototype */;
 			productType = "com.apple.product-type.tool";
 		};
+		9DDE09312DA790FF0022E5F2 /* Singleton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DDE09382DA790FF0022E5F2 /* Build configuration list for PBXNativeTarget "Singleton" */;
+			buildPhases = (
+				9DDE092E2DA790FF0022E5F2 /* Sources */,
+				9DDE092F2DA790FF0022E5F2 /* Frameworks */,
+				9DDE09302DA790FF0022E5F2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9DDE09332DA790FF0022E5F2 /* Singleton */,
+			);
+			name = Singleton;
+			packageProductDependencies = (
+			);
+			productName = Singleton;
+			productReference = 9DDE09322DA790FF0022E5F2 /* Singleton */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -259,6 +305,9 @@
 					9DDE08EA2DA77B7E0022E5F2 = {
 						CreatedOnToolsVersion = 16.2;
 					};
+					9DDE09312DA790FF0022E5F2 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = 9DDE07BA2DA569DF0022E5F2 /* Build configuration list for PBXProject "DSPs" */;
@@ -279,6 +328,7 @@
 				9DDE08532DA62E830022E5F2 /* Builder */,
 				9DDE08802DA652750022E5F2 /* FactoryMethod */,
 				9DDE08EA2DA77B7E0022E5F2 /* Prototype */,
+				9DDE09312DA790FF0022E5F2 /* Singleton */,
 			);
 		};
 /* End PBXProject section */
@@ -306,6 +356,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9DDE08E72DA77B7E0022E5F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DDE092E2DA790FF0022E5F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -521,6 +578,28 @@
 			};
 			name = Release;
 		};
+		9DDE09362DA790FF0022E5F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XHRN62S9RK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9DDE09372DA790FF0022E5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XHRN62S9RK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -565,6 +644,15 @@
 			buildConfigurations = (
 				9DDE08EF2DA77B7E0022E5F2 /* Debug */,
 				9DDE08F02DA77B7E0022E5F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DDE09382DA790FF0022E5F2 /* Build configuration list for PBXNativeTarget "Singleton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DDE09362DA790FF0022E5F2 /* Debug */,
+				9DDE09372DA790FF0022E5F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
