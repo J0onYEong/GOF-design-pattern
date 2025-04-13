@@ -58,3 +58,18 @@
     </td>
   </tr>
 </table>
+
+## 구조 패턴
+<table>
+  <tr>
+    <td>
+      <b>Adapter pattern(적응자 패턴)</b>
+    </td>
+    <td>
+      <a href="https://github.com/J0onYEong/GOF-design-pattern/tree/develop/Adapter">저장소</a>
+    </td>
+    <td>
+      <a href="https://ios-adventure-with-aphelios.tistory.com/52">정리글</a>
+    </td>
+  </tr>
+</table>
