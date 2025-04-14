@@ -72,4 +72,16 @@
       <a href="https://ios-adventure-with-aphelios.tistory.com/52">정리글</a>
     </td>
   </tr>
+  <tr>
+    <td>
+      <b>Bridge pattern(가교 패턴)</b>
+    </td>
+    <td>
+      <a href="https://github.com/J0onYEong/GOF-design-pattern/tree/develop/Bridge">저장소</a>
+    </td>
+    <td>
+      <a href="https://ios-adventure-with-aphelios.tistory.com/53">정리글</a>
+    </td>
+  </tr>
+
 </table>

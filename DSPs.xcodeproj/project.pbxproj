@@ -16,6 +16,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		9D1A82652DACCD8B009F4888 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		9DDE07F12DA578520022E5F2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,6 +74,7 @@
 
 /* Begin PBXFileReference section */
 		9D1A820B2DABCB02009F4888 /* Adapter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Adapter; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1A82672DACCD8B009F4888 /* Bridge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bridge; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDE07F32DA578520022E5F2 /* AbstractFactory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AbstractFactory; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDE08542DA62E830022E5F2 /* Builder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Builder; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDE08812DA652750022E5F2 /* FactoryMethod */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FactoryMethod; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +103,11 @@
 		9D1A820C2DABCB02009F4888 /* Adapter */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		9D1A82682DACCD8B009F4888 /* Bridge */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 		9DDE07E32DA5781C0022E5F2 /* AbstractFactory */ = {
@@ -127,6 +142,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		9D1A82082DABCB02009F4888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D1A82642DACCD8B009F4888 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -180,6 +202,7 @@
 				9DDE08EC2DA77B7E0022E5F2 /* Prototype */,
 				9DDE09332DA790FF0022E5F2 /* Singleton */,
 				9D1A820C2DABCB02009F4888 /* Adapter */,
+				9D1A82682DACCD8B009F4888 /* Bridge */,
 				9DDE07C02DA569DF0022E5F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -193,6 +216,7 @@
 				9DDE08EB2DA77B7E0022E5F2 /* Prototype */,
 				9DDE09322DA790FF0022E5F2 /* Singleton */,
 				9D1A820B2DABCB02009F4888 /* Adapter */,
+				9D1A82672DACCD8B009F4888 /* Bridge */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +244,28 @@
 			);
 			productName = Adapter;
 			productReference = 9D1A820B2DABCB02009F4888 /* Adapter */;
+			productType = "com.apple.product-type.tool";
+		};
+		9D1A82662DACCD8B009F4888 /* Bridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D1A826D2DACCD8B009F4888 /* Build configuration list for PBXNativeTarget "Bridge" */;
+			buildPhases = (
+				9D1A82632DACCD8B009F4888 /* Sources */,
+				9D1A82642DACCD8B009F4888 /* Frameworks */,
+				9D1A82652DACCD8B009F4888 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9D1A82682DACCD8B009F4888 /* Bridge */,
+			);
+			name = Bridge;
+			packageProductDependencies = (
+			);
+			productName = Bridge;
+			productReference = 9D1A82672DACCD8B009F4888 /* Bridge */;
 			productType = "com.apple.product-type.tool";
 		};
 		9DDE07F22DA578520022E5F2 /* AbstractFactory */ = {
@@ -342,6 +388,9 @@
 					9D1A820A2DABCB02009F4888 = {
 						CreatedOnToolsVersion = 16.2;
 					};
+					9D1A82662DACCD8B009F4888 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					9DDE07F22DA578520022E5F2 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -379,12 +428,20 @@
 				9DDE08EA2DA77B7E0022E5F2 /* Prototype */,
 				9DDE09312DA790FF0022E5F2 /* Singleton */,
 				9D1A820A2DABCB02009F4888 /* Adapter */,
+				9D1A82662DACCD8B009F4888 /* Bridge */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D1A82072DABCB02009F4888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D1A82632DACCD8B009F4888 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -441,6 +498,28 @@
 			name = Debug;
 		};
 		9D1A82102DABCB02009F4888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XHRN62S9RK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9D1A826B2DACCD8B009F4888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XHRN62S9RK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9D1A826C2DACCD8B009F4888 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -687,6 +766,15 @@
 			buildConfigurations = (
 				9D1A820F2DABCB02009F4888 /* Debug */,
 				9D1A82102DABCB02009F4888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D1A826D2DACCD8B009F4888 /* Build configuration list for PBXNativeTarget "Bridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D1A826B2DACCD8B009F4888 /* Debug */,
+				9D1A826C2DACCD8B009F4888 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
