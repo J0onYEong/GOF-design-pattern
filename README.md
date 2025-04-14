@@ -83,5 +83,15 @@
       <a href="https://ios-adventure-with-aphelios.tistory.com/53">정리글</a>
     </td>
   </tr>
-
+  <tr>
+    <td>
+      <b>Composite pattern(복합체 패턴)</b>
+    </td>
+    <td>
+      <a href="https://github.com/J0onYEong/GOF-design-pattern/tree/develop/Composite">저장소</a>
+    </td>
+    <td>
+      <a href="https://ios-adventure-with-aphelios.tistory.com/54">정리글</a>
+    </td>
+  </tr>
 </table>
