@@ -94,4 +94,15 @@
       <a href="https://ios-adventure-with-aphelios.tistory.com/54">정리글</a>
     </td>
   </tr>
+  <tr>
+    <td>
+      <b>Decorator pattern(장식자 패턴)</b>
+    </td>
+    <td>
+      <a href="https://github.com/J0onYEong/GOF-design-pattern/tree/develop/Decorator">저장소</a>
+    </td>
+    <td>
+      <a href="https://ios-adventure-with-aphelios.tistory.com/55">정리글</a>
+    </td>
+  </tr>
 </table>
