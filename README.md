@@ -105,4 +105,15 @@
       <a href="https://ios-adventure-with-aphelios.tistory.com/55">정리글</a>
     </td>
   </tr>
+    <tr>
+    <td>
+      <b>Pacade pattern(퍼사드 패턴)</b>
+    </td>
+    <td>
+      <b>-</b>
+    </td>
+    <td>
+      <a href="https://ios-adventure-with-aphelios.tistory.com/56">정리글</a>
+    </td>
+  </tr>
 </table>
