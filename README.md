@@ -139,3 +139,18 @@
     </td>
   </tr>
 </table>
+
+## 행동 패턴
+<table>
+  <tr>
+    <td>
+      <b>Chain of responsibility(책임-연쇄 패턴)</b>
+    </td>
+    <td>
+      <a href="https://github.com/J0onYEong/GOF-design-pattern/tree/develop/COR">저장소</a>
+    </td>
+    <td>
+      <a href="https://ios-adventure-with-aphelios.tistory.com/60">정리글</a>
+    </td>
+  </tr>
+</table>
