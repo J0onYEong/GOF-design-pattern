@@ -127,4 +127,15 @@
       <a href="https://ios-adventure-with-aphelios.tistory.com/57">정리글</a>
     </td>
   </tr>
+  <tr>
+    <td>
+      <b>Proxy pattern(프록시 패턴)</b>
+    </td>
+    <td>
+      <a href="https://github.com/J0onYEong/GOF-design-pattern/tree/develop/Proxy">저장소</a>
+    </td>
+    <td>
+      <a href="https://ios-adventure-with-aphelios.tistory.com/59">정리글</a>
+    </td>
+  </tr>
 </table>
