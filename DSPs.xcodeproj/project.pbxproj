@@ -160,6 +160,7 @@
 		9DDE08EB2DA77B7E0022E5F2 /* Prototype */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Prototype; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDE09322DA790FF0022E5F2 /* Singleton */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Singleton; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE47E062DBC9DD3000F61BD /* Mediator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mediator; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE47E172DBCBC1F000F61BD /* Memento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -256,6 +257,11 @@
 		9DE47E072DBC9DD3000F61BD /* Mediator */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Mediator;
+			sourceTree = "<group>";
+		};
+		9DE47E182DBCBC1F000F61BD /* Memento */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Memento;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -366,6 +372,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9DE47E142DBCBC1F000F61BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -387,6 +400,7 @@
 				9D45A2582DB9FB12003D265C /* Command */,
 				9D4D7CB92DBB80F90008CF81 /* Iterator */,
 				9DE47E072DBC9DD3000F61BD /* Mediator */,
+				9DE47E182DBCBC1F000F61BD /* Memento */,
 				9DDE07C02DA569DF0022E5F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -409,6 +423,7 @@
 				9D45A2572DB9FB12003D265C /* Command */,
 				9D4D7CB82DBB80F90008CF81 /* Iterator */,
 				9DE47E062DBC9DD3000F61BD /* Mediator */,
+				9DE47E172DBCBC1F000F61BD /* Memento.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -743,6 +758,28 @@
 			productReference = 9DE47E062DBC9DD3000F61BD /* Mediator */;
 			productType = "com.apple.product-type.tool";
 		};
+		9DE47E162DBCBC1F000F61BD /* Memento */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DE47E382DBCBC20000F61BD /* Build configuration list for PBXNativeTarget "Memento" */;
+			buildPhases = (
+				9DE47E132DBCBC1F000F61BD /* Sources */,
+				9DE47E142DBCBC1F000F61BD /* Frameworks */,
+				9DE47E152DBCBC1F000F61BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9DE47E182DBCBC1F000F61BD /* Memento */,
+			);
+			name = Memento;
+			packageProductDependencies = (
+			);
+			productName = Memento;
+			productReference = 9DE47E172DBCBC1F000F61BD /* Memento.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -798,6 +835,9 @@
 					9DE47E052DBC9DD3000F61BD = {
 						CreatedOnToolsVersion = 16.2;
 					};
+					9DE47E162DBCBC1F000F61BD = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = 9DDE07BA2DA569DF0022E5F2 /* Build configuration list for PBXProject "DSPs" */;
@@ -829,9 +869,20 @@
 				9D45A2562DB9FB12003D265C /* Command */,
 				9D4D7CB72DBB80F90008CF81 /* Iterator */,
 				9DE47E052DBC9DD3000F61BD /* Mediator */,
+				9DE47E162DBCBC1F000F61BD /* Memento */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DE47E152DBCBC1F000F61BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D1A82072DABCB02009F4888 /* Sources */ = {
@@ -933,6 +984,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9DE47E022DBC9DD3000F61BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE47E132DBCBC1F000F61BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1390,6 +1448,69 @@
 			};
 			name = Release;
 		};
+		9DE47E392DBCBC20000F61BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Memento/Preview Content\"";
+				DEVELOPMENT_TEAM = XHRN62S9RK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.choijunyeong.Memento;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DE47E3A2DBCBC20000F61BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Memento/Preview Content\"";
+				DEVELOPMENT_TEAM = XHRN62S9RK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.choijunyeong.Memento;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1533,6 +1654,15 @@
 			buildConfigurations = (
 				9DE47E0A2DBC9DD3000F61BD /* Debug */,
 				9DE47E0B2DBC9DD3000F61BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DE47E382DBCBC20000F61BD /* Build configuration list for PBXNativeTarget "Memento" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE47E392DBCBC20000F61BD /* Debug */,
+				9DE47E3A2DBCBC20000F61BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
