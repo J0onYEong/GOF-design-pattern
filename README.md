@@ -197,4 +197,15 @@
       <a href="https://ios-adventure-with-aphelios.tistory.com/64">정리글</a>
     </td>
   </tr>
+  <tr>
+    <td>
+      <b>Observe pattern(감시자 패턴)</b>
+    </td>
+    <td>
+      <b>-</b>
+    </td>
+    <td>
+      <a href="https://ios-adventure-with-aphelios.tistory.com/65">정리글</a>
+    </td>
+  </tr>
 </table>
