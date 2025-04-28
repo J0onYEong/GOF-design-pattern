@@ -142,6 +142,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		9DE47F3D2DBF66C6000F61BD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -161,6 +170,7 @@
 		9DDE09322DA790FF0022E5F2 /* Singleton */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Singleton; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE47E062DBC9DD3000F61BD /* Mediator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mediator; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE47E172DBCBC1F000F61BD /* Memento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memento.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE47F3F2DBF66C6000F61BD /* State */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = State; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -262,6 +272,11 @@
 		9DE47E182DBCBC1F000F61BD /* Memento */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Memento;
+			sourceTree = "<group>";
+		};
+		9DE47F402DBF66C6000F61BD /* State */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -379,6 +394,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9DE47F3C2DBF66C6000F61BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -401,6 +423,7 @@
 				9D4D7CB92DBB80F90008CF81 /* Iterator */,
 				9DE47E072DBC9DD3000F61BD /* Mediator */,
 				9DE47E182DBCBC1F000F61BD /* Memento */,
+				9DE47F402DBF66C6000F61BD /* State */,
 				9DDE07C02DA569DF0022E5F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -424,6 +447,7 @@
 				9D4D7CB82DBB80F90008CF81 /* Iterator */,
 				9DE47E062DBC9DD3000F61BD /* Mediator */,
 				9DE47E172DBCBC1F000F61BD /* Memento.app */,
+				9DE47F3F2DBF66C6000F61BD /* State */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -780,6 +804,28 @@
 			productReference = 9DE47E172DBCBC1F000F61BD /* Memento.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9DE47F3E2DBF66C6000F61BD /* State */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DE47F452DBF66C6000F61BD /* Build configuration list for PBXNativeTarget "State" */;
+			buildPhases = (
+				9DE47F3B2DBF66C6000F61BD /* Sources */,
+				9DE47F3C2DBF66C6000F61BD /* Frameworks */,
+				9DE47F3D2DBF66C6000F61BD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9DE47F402DBF66C6000F61BD /* State */,
+			);
+			name = State;
+			packageProductDependencies = (
+			);
+			productName = State;
+			productReference = 9DE47F3F2DBF66C6000F61BD /* State */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -838,6 +884,9 @@
 					9DE47E162DBCBC1F000F61BD = {
 						CreatedOnToolsVersion = 16.2;
 					};
+					9DE47F3E2DBF66C6000F61BD = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = 9DDE07BA2DA569DF0022E5F2 /* Build configuration list for PBXProject "DSPs" */;
@@ -870,6 +919,7 @@
 				9D4D7CB72DBB80F90008CF81 /* Iterator */,
 				9DE47E052DBC9DD3000F61BD /* Mediator */,
 				9DE47E162DBCBC1F000F61BD /* Memento */,
+				9DE47F3E2DBF66C6000F61BD /* State */,
 			);
 		};
 /* End PBXProject section */
@@ -991,6 +1041,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9DE47E132DBCBC1F000F61BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE47F3B2DBF66C6000F61BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1511,6 +1568,28 @@
 			};
 			name = Release;
 		};
+		9DE47F432DBF66C6000F61BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XHRN62S9RK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9DE47F442DBF66C6000F61BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XHRN62S9RK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1663,6 +1742,15 @@
 			buildConfigurations = (
 				9DE47E392DBCBC20000F61BD /* Debug */,
 				9DE47E3A2DBCBC20000F61BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DE47F452DBF66C6000F61BD /* Build configuration list for PBXNativeTarget "State" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE47F432DBF66C6000F61BD /* Debug */,
+				9DE47F442DBF66C6000F61BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
