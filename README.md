@@ -219,4 +219,15 @@
       <a href="https://ios-adventure-with-aphelios.tistory.com/66">정리글</a>
     </td>
   </tr>
+  <tr>
+    <td>
+      <b>Strategy pattern(전략 패턴)</b>
+    </td>
+    <td>
+      <a href="https://github.com/J0onYEong/GOF-design-pattern/tree/develop/Strategy">저장소</a>
+    </td>
+    <td>
+      <a href="https://ios-adventure-with-aphelios.tistory.com/67">정리글</a>
+    </td>
+  </tr>
 </table>
